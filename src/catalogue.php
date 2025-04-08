@@ -3,7 +3,7 @@
  * @Author: Engeryu
  * @Date:   2021-07-01 14:19:24
  * @Last Modified by:   Engeryu
- * @Last Modified time: 2025-04-06 23:14:37
+ * @Last Modified time: 2025-04-08 20:03:56
  */
 
  ob_start();
@@ -49,7 +49,7 @@ $product = $stmt->fetchALL(PDO::FETCH_ASSOC);
 <ul class="card-wrap">
 <?php foreach($product as $p) : ?>
         <li>
-          <img src="image/<?= $p['imageProduct'] ?>" alt=''>
+          <img src="../img/<?= $p['imageProduct'] ?>" alt=''>
           <h3><?= $p['idProduct'] ?></h3>
           <p><?= $p['refProduct'] ?></p>
           <p class="price"><?= $p['priceProduct'] ?>€</p>
@@ -61,7 +61,7 @@ $product = $stmt->fetchALL(PDO::FETCH_ASSOC);
 <footer class="text-muted">
       <div class="container">
         <p class="float-right">
-          <a href="#"><img src="image/bouton-scroll-top.jpg" alt="Back to top"/></a>
+          <a href="#"><img src="../img/bouton-scroll-top.jpg" alt="Back to top"/></a>
         </p>
       </div>
     </footer>
